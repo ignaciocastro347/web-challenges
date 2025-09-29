@@ -1,0 +1,128 @@
+:root {
+  --green: #c5f82a;
+  --white: #fff;
+  --grey-700: #333333;
+  --grey-800: #1f1f1f;
+  --grey-900: #141414;
+  --link-color: #c5f82a;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(./assets/fonts/static/Inter-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Inter;
+  src: url(./assets/fonts/static/Inter-SemiBold.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: Inter;
+  src: url(./assets/fonts/static/Inter-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  height: 100dvh;
+  margin: 0;
+  padding: 0;
+  background-color: var(--grey-900);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Inter;
+}
+
+.profile-card {
+  max-width: 240px;
+  width: 100%;
+  padding: 32px;
+  background-color: var(--grey-800);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.profile-img {
+  width: 70px;
+  height: 70px;
+  margin: 0 0 22px;
+  border-radius: 100%;
+}
+
+.profile-name {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--white);
+  letter-spacing: 0.7px;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.profile-city {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--green);
+}
+
+.profile-body {
+  margin-bottom: 10px;
+}
+
+.profile-body p.profile-description {
+  text-align: center;
+  font-size: 11px;
+  font-weight: 400;
+  color: #ffffffba;
+}
+
+.profile-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.profile-buttons button {
+  width: 100%;
+  padding: 11px 0;
+  background: var(--grey-700);
+  color: #ffffffde;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  line-height: 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.profile-buttons button:hover {
+  background: var(--green);
+  color: var(--grey-900);
+}
+
+.attribution {
+  position: absolute;
+  bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  text-align: center;
+  color: var(--white);
+}
+
+.attribution a {
+  color: var(--link-color);
+}
